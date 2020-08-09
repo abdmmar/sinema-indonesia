@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+
+.card{
+    @apply rounded-lg overflow-hidden p-4 flex flex-col;
+}
+
+.card:hover{
+    @apply shadow-xl bg-gray-800 scale-100 -translate-y-1;
+}
+
+.badge{
+    @apply w-16 text-xs rounded-full font-bold flex items-center justify-center uppercase tracking-wide;
+}
+
+.title{
+    @apply font-bold text-xl text-gray-100;
+}
+
+@tailwind utilities;

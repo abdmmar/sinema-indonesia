@@ -1,0 +1,41 @@
+{
+  "name": "sinema",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "build-css": "tailwind build src/styles/style.css -o src/styles/style-tw.css",
+    "start-css": "tailwind build src/styles/style.css -o src/styles/style-tw.css --watch",
+    "start-dev": "webpack-dev-server --config webpack.dev.js --open",
+    "watch": "npm-run-all --parallel start-css start-dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "autoprefixer": "^9.8.6",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.2.0",
+    "html-webpack-plugin": "^4.3.0",
+    "moment-locales-webpack-plugin": "^1.2.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.1",
+    "postcss-loader": "^3.0.0",
+    "regenerator-runtime": "^0.13.7",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.0.9"
+  },
+  "dependencies": {
+    "moment": "^2.27.0",
+    "tailwindcss": "^1.6.0"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ]
+}
