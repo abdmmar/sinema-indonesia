@@ -6,3 +6,7 @@ A web that functions to find Indonesian-made cinemas
   * TailwindCSS
   * Web Components
   * Webpack
+
+## Live Preview
+Visit:
+https://sinema-indonesia.vercel.app/
